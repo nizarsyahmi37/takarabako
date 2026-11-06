@@ -1,5 +1,5 @@
-/// Where the Takarabako kiosks are. One for now: the box at the ETHTokyo
-/// hackathon venue. `id` matches the backend's KIOSK_ID and the id the kiosk is registered under;
+/// Where the Takarabako kiosks are. One for now: the demo box in Mumbai.
+/// Put the real venue, coordinates and hours below. `id` matches the backend's KIOSK_ID and the id the kiosk is registered under;
 /// `chain` is the chain its notes are credited on.
 
 export interface KioskLocation {
@@ -17,15 +17,16 @@ export interface KioskLocation {
 
 export const KIOSKS: KioskLocation[] = [
   {
-    id: "tokyo-01",
+    id: "mumbai-01",
     chain: "sepolia",
-    name: "Takarabako · ETHTokyo",
-    lat: 35.66700139908581,
-    lng: 139.7491968121778,
-    venue: "ETHTokyo hackathon venue",
+    name: "Takarabako · Mumbai",
+    // Central Mumbai (approximate): replace with the kiosk's real position.
+    lat: 19.076,
+    lng: 72.8777,
+    venue: "Mumbai (demo location)",
     floor: "5F",
-    spot: "Hacking Space (south side), by the Partners and Mentor Station",
-    hours: "Open during the hackathon",
+    spot: "Set the exact spot for the venue",
+    hours: "Demo hours",
     accepts: "Malaysian ringgit notes (RM1–RM100)",
   },
 ];
